@@ -43,9 +43,9 @@ r = -7 := by
 example {a b c d e f : ℤ} (h1 : a * d = b * c) (h2 : c * f = d * e) :
     d * (a * f - b * e) = 0 := by ring
   calc
-   d*(a*f -b*e)-d*a*f=d*a*f-d*b*e:= by ring
-    _=(d*a)*f-b*(d*e):= by ring
-    _=(a*d)*f-b*(d*e):= by ring
-    _=(b*c)*f-b*(c*f):= by rw[h1,h2]
-    _=0:= by ring
+   d*(a*f -b*e)-d*a*f= d*a*f-d*b*e:= by ring
+    _= (d*a)*f-b*(d*e):= by ring
+    _= (a*d)*f-b*(d*e):= by ring
+    _= (b*c)*f-b*(c*f):= by rw[h1,h2]
+    _= 0:= by ring
 done
