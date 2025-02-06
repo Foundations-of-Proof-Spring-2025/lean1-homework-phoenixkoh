@@ -47,5 +47,5 @@ example {a b c d e f : ℤ} (h1 : a * d = b * c) (h2 : c * f = d * e) :
   _=(d*a)*f-b*(d*e):= by ring
   _=(a*d)*f-b*(d*e):= by ring
   _=(b*c)*f-b*(c*f):= by rw[h1,h2]
-  _=0:=by ring
+  _=0:= by ring
 done
